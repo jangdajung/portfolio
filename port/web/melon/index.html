@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>멜론리뉴얼</title>
+      <!-- 파비콘/폰트 -->
+    <link rel="shortcut icon" href="./images/favi.png">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/index.js"></script>
+    <!-- 다정 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.js"></script>
+    <script src="js/jquery.mousewheel.min.js"></script>
+   <script>
+    
+    // $(function(){
+    //     var t;
+    //     var w=100+"%"; 
+    //     var h=1080; 
+    //     var n=0; 
+        
+    //     window.addEventListener("wheel", function(e){
+    //         e.preventDefault();
+    //     },{passive : false});
+       
+    //     $(".aside li").eq(0).addClass("on");
+    //     $(".wrap").mousewheel(function(e,delta){
+    //         if(delta>0 && n>0){
+    //             n--;
+    //         }
+    //         else if(delta<0 && n<4){
+    //             n++;                
+    //         }
+    //         t=(-1)*n*h;
+            
+    //         $(this).stop().animate({marginTop: t},1000);
+    //         $(".aside li").removeClass("on");
+	// 		$(".aside li").eq(n).addClass("on");
+
+    //     });
+    //    $(".aside li a").click(function(e){
+    //         e.preventDefault();
+    //         n=$(this).parent("li").index();
+    //         //console.log(n);
+    //         t=(-1)*n*h;
+    //         console.log(t);
+    //         $(".aside li").removeClass("on");
+    //         $(".aside li").eq(n).addClass("on");
+    //         $(".wrap").stop().animate({marginTop:t}, 1000);
+    //     });
+
+        
+    // });
+   </script> 
+    
+
+</head>
+<body>
+    <div class="wrap">
+        <div class="aside">
+            <ul>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+            </ul>
+        </div>
+        <header id="header">
+            <div class="headIn">
+                <h1 id="logo"><a href="#"><img src="./images/logo_melon142x99.png" alt="logo"></a></h1>
+                <nav id="nav">
+                    <ul>
+                        <li><a href="#">멜론차트</a></li>
+                        <li><a href="#">최신음악</a></li>
+                        <li><a href="#">장르음악</a></li>
+                        <li><a href="#">멜론DJ</a></li>
+                        <li><a href="#">멜론TV</a></li>
+                    </ul>
+                </nav>
+                <div class="util">
+                    <ul>
+                        <li><a href="#"><img src="./images/magnifying-glass_116836.png" alt="serch"></a></li>
+                        <li><a href="#"><img src="./images/icons8-customer-32.png" alt="user"></a></li>
+                    </ul>
+                </div>
+                <div class="realtime_soar_keyword">
+                    <h4 class="title"><img src="./images/bg_loce_151207.png" alt="실시간급상승"></h4>
+                    <div class="keyword">
+                        <ul>
+                            <li><a href="#">1. 마이진</a></li>
+                            <li><a href="#">2. 리쌍</a></li>
+                            <li><a href="#">3. 세븐틴</a></li>
+                            <li><a href="#">4. Eclipse</a></li>
+                            <li><a href="#">5. 몽당연필</a></li>
+                            <li><a href="#">6. 아이유</a></li>
+                            <li><a href="#">7. aespa</a></li>
+                            <li><a href="#">8. 기장갈매기</a></li>
+                            <li><a href="#">9. Charlie Puth</a></li>
+                            <li><a href="#">10. NMIXX</a></li>
+                        </ul>
+                    </div>
+                </div>
+               
+            </div>
+        </header>
+        <section class="slideWrap page">
+            <div class="slide">
+                <ul>
+                    
+                    <li><a href="#"><img src="images/iu.png" alt="2"></a></li>
+                    <li><a href="#"><img src="images/qwer.png" alt="3"></a></li>
+                    <li><a href="#"><img src="images/아이브.png" alt="4"></a></li>
+                    <li><a href="#"><img src="./images/aespa.png" alt="1"></a></li>
+                </ul>
+            </div>
+            <div class="arrow">
+                <a href="#" class="next"></a>
+                <a href="#" class="prev"></a>
+            </div>
+            <div class="rolling">
+                <ul>
+                    <li class="on"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                </ul>
+            </div>
+        </section>
+        <section id="s3" class="page">
+            <div class="s3_title_bg">
+                <div class="s3_title">
+                    멜론차트 TOP 10
+                </div>
+                <div class="s3_nav">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="./images/셔플듣기.png" alt="1">
+                                <p>셔플듣기</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/듣기.png" alt="2">
+                                <p>전체듣기</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/듣기.png" alt="3">
+                                <p>듣기</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/담기.png" alt="4">
+                                <p>담기</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/다운.png" alt="5">
+                                <p>다운</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/FLAC.png" alt="6">
+                                <p>FLAC</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/선물하기.png" alt="7">
+                                <p>선물하기</p>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="s3_cont">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <ul class="chart">
+                                <li>1.</li>
+                                <img src="./melonimages/Supernova1.jpg" alt="1">
+                                <div class="dim">+</div>
+                                <li>Supernova <span>-aespa</span></li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <ul class="chart">
+                                <li>2.</li>
+                                <img src="./melonimages/hotsweet2.jpg" alt="1">
+                                <div class="dim">+</div>
+                                <li>HOW SWEET <span>-Newjeans</span></li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <ul class="chart">
+                                <li>3.</li>
+                                <img src="./melonimages/IU3.jpg" alt="1">
+                                <div class="dim">+</div>
+                                <li>Love wins all <span>-아이유</span></li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <ul class="chart">
+                                <li>4.</li>
+                                <img src="./melonimages/qwer4.jpg" alt="1">
+                                <div class="dim">+</div>
+                                <li>고민중독 <span>-qwer</span></li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <ul class="chart">
+                                <li>5.</li>
+                                <img src="./melonimages/ARMA5.jpg" alt="1">
+                                <div class="dim">+</div>
+                                <li>Armageddon <span>-aespa</span></li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <ul class="chart">
+                                <li>6.</li>
+                                <img src="./melonimages/ive6.jpg" alt="1">
+                                <div class="dim">+</div>
+                                <li>해야(HEYA) <span>-IVE(아이브)</span></li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <ul class="chart">
+                                <li>7.</li>
+                                <img src="./melonimages/spot7.jpg" alt="1">
+                                <div class="dim">+</div>
+                                <li>SPOT!(feat.JENNIE) <span>-지코(ZICO)</span></li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <ul class="chart">
+                                <li>8.</li>
+                                <img src="./melonimages/tws8.jpg" alt="1">
+                                <div class="dim">+</div>
+                                <li>첫 만남은 계획대로 되지 않아 <span>-투어스(TWS)</span></li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <ul class="chart">
+                                <li>9.</li>
+                                <img src="./images/KakaoTalk_20240617_155121808.jpg" alt="1">
+                                <div class="dim">+</div>
+                                <li>나는 아픈건 딱 질색이니까 <span>-(여자)아이들</span></li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <ul class="chart">
+                                <li>10.</li>
+                                <img src="./images/KakaoTalk_20240617_155121808_01.jpg" alt="1">
+                                <div class="dim">+</div>
+                                <li>한 페이지가 될 수 있게 <span>-DAY6(데이식스)</span></li>
+                            </ul>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="s1" class="page">
+            <div class="title_bg">
+                <ul>
+                    <li>인기있어요</li>
+                    <li>지금 이슈가 되는 아티스트의 인기 컨텐츠입니다.</li>
+                </ul>
+            </div>
+            <div class="contents">
+                <div class="cont1">
+                    <ul>
+                        <li>
+                            <a href="#">
+                            <img src="./멜론section1/s1_1.jfif" alt="img1">
+                            <div class="textbox">
+                                <p>Now (Original by Fin.K.L)</p>
+                                <p>원어스 (ONEUS)</p>
+                            </div>
+                            </a>
+                            
+                        </li>
+                        <li>
+                            <a href="#">
+                            <img src="./멜론section1/s1_2.jfif" alt="img2">
+                            <div class="textbox">
+                                <p>Give Me That (Korean Ver.)</p>
+                                <p>WayV</p>
+                            </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                            <img src="./멜론section1/s1_3.jfif" alt="img3">
+                            <div class="textbox">
+                                <p>BADVILLAIN</p>
+                                <p>BADVILLAIN (배드빌런)</p>
+                            </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                            <img src="./멜론section1/s1_4.jfif" alt="img4">
+                            <div class="textbox">
+                                <p>Cali Shine (Making Film Ver.)</p>
+                                <p>김범수, Dok2</p>
+                            </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                            <img src="./멜론section1/s1_5.jfif" alt="img5">
+                            <div class="textbox">
+                                <p>켜줘 (Light)</p>
+                                <p>Wanna One (워너원)</p>
+                            </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="cont2">
+                    <ul>
+                        <li>
+                            <a href="#">
+                            <img src="./멜론section1/s1_6.jfif" alt="img6">
+                            <div class="textbox">
+                                <p>New Rules (Lyric Ver.)</p>
+                                <p>Dua Lipa</p>
+                            </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                            <img src="./멜론section1/s1_7.jpg" alt="img7">
+                            <div class="textbox">
+                                <p>팬송 사건. 최애가 팬송으로 날 울린 사건이다.</p>
+                                <p>감동 가득 팬송 모음!</p>
+                            </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                            <img src="./멜론section1/s1_8.jpg" alt="img8">
+                            <div class="textbox">
+                                <p>나얼과 에코브릿지의 '퇴근길'</p>
+                                <p>(Diggin' On Air)</p>
+                            </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                            <img src="./멜론section1/s1_9.jpg" alt="img9">
+                            <div class="textbox">
+                                <p>더 큰 임팩트로 컴백!</p>
+                                <p>ONE PACT (원팩트) [PARADOXX]</p>
+                            </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                            <img src="./멜론section1/s1_10.jpg" alt="img10">
+                            <div class="textbox">
+                                <p>GHOST9(고스트나인)</p>
+                                <p>'째깍째깍(Awesome day)'</p>
+                            </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="s2" class="page">
+            <div class="s2_title_bg">
+                원하는 뮤직비디오, O.S.T, 앨범을<br>
+                자유롭게 감상하세요
+            </div>
+            <div class="s2_cont">
+                <ul>
+                    <li class="s2_com">
+                        <img src="./images/컴.png" alt="컴">
+                        <video src="./images/NewJeans (뉴진스) 'How Sweet' Official MV.mp4" class="com" autoplay muted></video>
+                    </li>
+                    <li class="s2_phone">
+                        <img src="./images/폰.png" alt="컴">
+                        <video src="./images/NewJeans (뉴진스) 'ETA' Official MV (Performance ver.).mp4" class="phone" autoplay muted></video>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        
+        <section id="s4" class="page">
+            <div class="s4_box">
+                <div class="text">
+                    멜론에서 인기음악, 최신음악,<br>
+                    드라마 OST, 멜론 뮤지컬까지!<br>
+                    다양하게 즐겨보세요.
+                </div>
+                <div class="loginbtn">
+                    <a href="#">멜론 로그인</a>
+                </div>
+            </div>
+        </section>
+        <footer id="footer">
+            <div class="f_top">
+                <div class="f_top_inner">
+                    <div class="f_toplist">
+                        <ul>
+                            <li><a href="#">멜론6.0</a></li>
+                            <li><a href="#">멜론스튜디오</a></li>
+                            <li><a href="#">Windows 플레이어</a></li>
+                            <li><a href="#">Mac 플레이어</a></li>
+                            <li><a href="#">iPad</a></li>
+                            <li><a href="#">고객센터</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="f_bottom">
+                <div class="f_bottom_inner">
+                    <div class="f_bottom1">
+                        <ul>
+                            <li><a href="#">이용약관</a></li>
+                            <li><a href="#">위치기반서비스 이용약관</a></li>
+                            <li><a  href="#">개인정보처리방침</a></li>
+                            <li><a href="#">청소년보호정책</a></li>
+                            <li><a href="#">제휴/프로모션문의</a></li>
+                            <li><a href="#">이메일주소무단수집거부</a></li>
+                            <li><a href="#">파트너센터</a></li>
+                        </ul>
+                    </div>
+                    <div class="f_bottom2">
+                        <ul>
+                            <li>(주)카카오엔터테인먼트</li>
+                            <li>경기도 성남시 분당구 판교역로 221</li>
+                            <li>공동대표이사 : 권기수,장윤중</li>
+                            <li>사업자등록번호 : 220-88-02594</li>
+                            <li>통신판매업신고번호 : 2018-성남분당B-004 사업자정보확인</li>
+                        </ul>
+                    </div>
+                    <div class="f_bottom3">
+                        <ul>
+                            <li>
+                                <span>문의전화</span>
+                                <span>1566-7727</span>
+                            </li>
+                            <li>
+                                <span>이메일</span>
+                                <span>melon_info@kakaoent.com</span>
+                            </li>
+                            <li>
+                                <span>호스팅서비스사업자 : (주)카카오엔터테인먼트</span>
+                                
+                            </li>
+                            <li>
+                                ⓒkakao Entertainment Corp.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+</body>
+</html>
