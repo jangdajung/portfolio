@@ -12,6 +12,8 @@
   <link rel="stylesheet" href="css/index.css">
   <script src="js/jquery-3.7.1.min.js"></script>
   <script src="js/index.js"></script>
+  <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+
 
 </head>
 <!-- mobile first -->
@@ -62,8 +64,9 @@
               <img src="./img/dajungblack.png" alt="wbimg">
             </figure>
             <div class="txt">
-              <p>#디자이너 #퍼블리셔 #UIUX</p>
-              <p>다정한 <SPAN>장다정</SPAN>입니다</p>
+              <p>#디자이너 #퍼블리셔<br> #UIUX #프론트앤드</p>
+              <br>
+              <p>안녕하세요 <br> 다정한 <SPAN>장다정</SPAN>입니다</p>
             </div>
           </div> <!-- //.imgInner -->
 
@@ -79,7 +82,7 @@
             <div class="Cerificate">
               <h3>Cerificate</h3>
               <p><span>2024 06</span> GTQ 그래픽 기술자격 1급</p>
-              <p><span>2024 05</span> GTQI 그래픽 기술자격 2급</p>
+              <p><span>2024 05</span> GTQI 그래픽 기술자격 1급</p>
             </div> <!-- //.Cerificate -->
             <div class="Education">
               <h3>Education</h3>
@@ -116,13 +119,15 @@
           <li><a href="#dpage">Detaile Page</a></li>
         </ul>
       </nav>
-      <section id="design1" class="cursernone ">
+
+      <!-- #design1 (start) -->
+
+      <section id="design1">
         <h2 class="title">DESIGN</h2>
         <div class="arrow">포스터를 click하세요!</div>
-        <div class="contWrap">
-          
-          <ul class="cont">
-            <li>
+        <div class="contWrap swiper">
+          <ul class="cont swiper-wrapper">
+            <li class="swiper-slide">
               <a href="#">
                 <img src="./img/post/san.jpg" alt="img1">
               </a>
@@ -133,7 +138,7 @@
                 </figure>
               </div>
             </li>
-            <li>
+            <li class="swiper-slide">
               <a href="#"><img src="./img/post/arcane1ps.jpg" alt="img2"></a>
               <div class="pop">
                 <figure>
@@ -142,7 +147,8 @@
                 </figure>
               </div>
             </li>
-            <li><a href="#"><img src="./img/post/twentyfive.jpg" alt="img3"></a>
+            <li class="swiper-slide">
+              <a href="#"><img src="./img/post/twentyfive.jpg" alt="img3"></a>
               <div class="pop">
                 <figure>
                   <img src="./img/post/up/twentyfivemobile.jpg" alt="pop">
@@ -150,7 +156,7 @@
                 </figure>
               </div>
             </li>
-            <li>
+            <li class="swiper-slide">
               <a href="#"><img src="./img/post/joker.jpg" alt="img2"></a>
             <div class="pop">
               <figure>
@@ -159,7 +165,7 @@
               </figure>
             </div>
             </li>
-            <li><a href="#"><img src="./img/post/ani.jpg" alt="img4"></a>
+            <li class="swiper-slide"><a href="#"><img src="./img/post/ani.jpg" alt="img4"></a>
               <div class="pop">
                 <figure>
                   <img src="./img/post/up/animobile.jpg" alt="pop">
@@ -167,136 +173,26 @@
                 </figure>
               </div>
             </li>
-            <li><a href="#"><img src="./img/post/hanso.jpg" alt="img5"></a>
-              <div class="pop">
-                <figure>
-                  <img src="./img/post/up/hanmobile.jpg" alt="pop">
-                  <button>닫기</button>
-                </figure>
-              </div></li>
-            <li><a href="#"><img src="./img/post/moon.png" alt="img7"></a>
+            <li class="swiper-slide"><a href="#"><img src="./img/post/moon.png" alt="img7"></a>
               <div class="pop">
                 <figure>
                   <img src="./img/post/up/moonMobile.jpg" alt="pop">
                   <button>닫기</button>
                 </figure>
               </div></li>
-            <li><a href="#"><img src="./img/post/mister.jpg" alt="img8"></a>
+            <li class="swiper-slide"><a href="#"><img src="./img/post/mister.jpg" alt="img8"></a>
               <div class="pop">
                 <figure>
                   <img src="./img/post/up/mrmobile.jpg" alt="pop">
                   <button>닫기</button>
                 </figure>
-              </div></li>
+              </div>
+            </li>
           </ul>
         </div>
-        <div class="btn">
-          <ul class="control">
-            <li class="pause"><a href="#"><img src="./img/stop.png" alt="일시정지"></a></li>
-            <li class="start on"><a href="#"><img src="./img/play.png" alt="재생"></a></li>
-          </ul>
-          <div class="rolling">
-            <ul>
-              <li><a href="#">센과 치히로의 행방불명</a></li>
-              <li><a href="#">ARCANE</a></li>
-              <li><a href="#">스물다섯스물하나</a></li>
-              <li><a href="#">JOKER</a></li>
-              <li><a href="#">주술회전</a></li>
-              <li><a href="#">핸섬가이즈</a></li>
-              <li><a href="#">달의연인</a></li>
-              <li><a href="#">미스터션샤인</a></li>
-            </ul>
-            <!-- <div class="btn">
-            <button>
-              <img src="./img/stop.png" alt="일시정지">
-            </button>
-            <button>
-              <img src="./img/play.png" alt="재생">
-            </button>
-            </div> -->
-          </div> <!-- //.rolling -->
-        </div>
+   
       </section>
 
-      <!-- <section id="design2">
-        <h2 class="title">DESIGN2</h2>
-        <div #swiperRef="1" class="swiper design">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide"><a href="#"><img src="./img/design2/emocover.png" alt="1"></a></div>
-            <div class="swiper-slide"><a href="#"><img src="./img/design2/emocover.png" alt="2"></a></div>
-            <div class="swiper-slide"><a href="#"><img src="./img/design2/emocover.png" alt="3"></a></div>
-            <div class="swiper-slide"><a href="#"><img src="./img/design2/emocover.png" alt="4"></a></div>
-          </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-        <p class="append-buttons">
-          <button class="prepend-2-slides"></button>
-          <button class="prepend-slide"></button>
-          <button class="append-slide"></button>
-          <button class="append-2-slides"></button>
-        </p>
-
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js">
-        </script>
-
-        <script>
-          var swiper = new Swiper("#design2 .design", {
-            slidesPerView: 1.5,
-            centeredSlides: true,
-            spaceBetween: 40,
-            pagination: {
-              el: ".swiper-pagination",
-              type: "fraction",
-            },
-            navigation: {
-              nextEl: ".swiper-button-next",
-              prevEl: ".swiper-button-prev",
-            },
-          });
-
-          var appendNumber = 4;
-          var prependNumber = 1;
-          document
-            .querySelector(".prepend-2-slides")
-            .addEventListener("click", function (e) {
-              e.preventDefault();
-              swiper.prependSlide([
-                '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
-                '<div class="swiper-slide">Slide ' + --prependNumber + "</div>",
-              ]);
-            });
-          document
-            .querySelector(".prepend-slide")
-            .addEventListener("click", function (e) {
-              e.preventDefault();
-              swiper.prependSlide(
-                '<div class="swiper-slide">Slide ' + --prependNumber + "</div>"
-              );
-            });
-          document
-            .querySelector(".append-slide")
-            .addEventListener("click", function (e) {
-              e.preventDefault();
-              swiper.appendSlide(
-                '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>"
-              );
-            });
-          document
-            .querySelector(".append-2-slides")
-            .addEventListener("click", function (e) {
-              e.preventDefault();
-              swiper.appendSlide([
-                '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
-                '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>",
-              ]);
-            });
-        </script>
-
-
-      </section> -->
 
       <section id="web">
         <h2 class="title">WEB</h2>
@@ -338,31 +234,12 @@
           </div>
           <div class="swiper-pagination">
           </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
         </div>
-        <!-- Swiper JS -->
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-        <!-- Initialize Swiper -->
-        <script>
-          var swiper = new Swiper(".web", {
-            effect: "cube",
-            grabCursor: true,
-            cubeEffect: {
-              shadow: true,
-              slideShadows: true,
-              shadowOffset: 20,
-              shadowScale: 0.94,
-            },
-            autoplay: {
-              delay: 4000
-            },
-            pagination: {
-              el: ".swiper-pagination",
-              clickable: true,
-            },
-          });
-        </script>
       </section>
+
+
       <section id="dpage">
         <h2 class="title">DETAIL PAGE</h2>
         <!-- <div class="arrow">
@@ -371,19 +248,20 @@
         <div class="cont1">
           <ul class="list1">
             <li>
+              <a href="./detail/torriden.html" target="_blank" title="토리든상세페이지">
+                <img src="./img/design2/tomobile1.jpg"alt="1">
+                <div class="dim">상세페이지 바로가기</div>
+              </a>
+            </li>
+            <li>
               <a href="./detail/cleaner.html" target="_blank" title="살림백서상세페이지">
                 <img src="./img/design2/salmobile1.jpg" alt="1">
                 <div class="dim">상세페이지
                   바로가기</div>
               </a>
             </li>
-            <li>
-              <a href="./detail/orange.html"target="_blank" title="오렌지 상세페이지">
-                <img src="./img/design2/orangecover.jpg" alt="1">
-                <div class="dim">상세페이지 바로가기</div>
-              </a>
-            </li>
           </ul>
+          
           <ul class="list2">
             <li>
               <a href="./detail/duo.html"target="_blank" title="듀오덤상세페이지">
@@ -392,8 +270,8 @@
               </a>
             </li>
             <li>
-              <a href="./detail/torriden.html" target="_blank" title="토리든상세페이지">
-                <img src="./img/design2/tomobile1.jpg"alt="1">
+              <a href="./detail/orange.html"target="_blank" title="오렌지 상세페이지">
+                <img src="./img/design2/orangecover.jpg" alt="1">
                 <div class="dim">상세페이지 바로가기</div>
               </a>
             </li>

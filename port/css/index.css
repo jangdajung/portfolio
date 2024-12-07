@@ -376,10 +376,9 @@ header nav.on {
 } */
 
 #design1 .contWrap {
-  /* width: 88%; */ /*440/500*/
-  height: 500px;
+  /* height: 500px; */
   margin: 0 auto;
-  overflow: hidden;
+  /* overflow: hidden; */
   position: relative;
 }
 #design1{
@@ -403,35 +402,27 @@ header nav.on {
     100%{transform:translate(50%, 15px);}
 }  
 
-#design1 .cont {
+/* #design1 .cont {
   width: max-content;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  /* transform: translateX(100px); */
-}
+} */
 
-
+/*
 #design1 .cont li {
   width: 100vw;
   height: 100%;
-  /* border: 1px solid #000; */
-  /* overflow: hidden; */
   float: left;
   padding: 10px;
   transition: 0.5s;
   position: relative;
-}
-/* #design1 .cont li:not(:last-child){
-    margin-right:20px;
 } */
-#design1 .cont li a {
-  height: 100%;
-  display: flex;
-}
-#design1 .btn{
+
+/* #design1 .btn{
   margin-top: 40px;
+  display: none;
 }
 #design1 .btn> ul{
   position: relative;
@@ -474,28 +465,29 @@ header nav.on {
 #design1 .rolling ul li a {
   line-height: 1.5;
 }
+  */
 
-#design1 .contWrap .cont .pop::before {
+/* #design1::before {
   content: "";
   background: rgba(0, 0, 0, 0.5);
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   display: block;
-  position: fixed;
+  position: absolute;
   left: 0;
   top: 0;
-}
+  z-index: 999;
+} */
 #design1 .contWrap .pop {
   display: none;
-  /* position: absolute; */
-  position: fixed;
+  position: absolute;
   width: 100%;
   height:100%;
   top: 0%;
   left: 0;
   z-index: 9999;
 }
-#design1 .contWrap .pop  figure{
+#design1 .contWrap .pop figure{
   width: 80%;
   position: absolute;
   top:50%;
@@ -527,13 +519,13 @@ header nav.on {
     gap:10px;
     margin-top:30px;
 } */
-#design1 .rolling li {
+/* #design1 .rolling li {
   color: #afafaf;
 }
 #design1 .rolling li.on {
   color: #000;
   font-weight: 600;
-}
+} */
 
 /**************** design2 */
 
@@ -636,6 +628,21 @@ header nav.on {
 
 #web .swiper-pagination-bullet {
   background: #000000;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  background-color: #fff;
+  opacity: 0.5;
+  padding: 30px 15px;
+  border-radius: 20px;
+  color: black;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-size: 1.3rem;
+  font-weight: 800;
 }
 
 /********************* detailed page */
@@ -836,7 +843,7 @@ header nav.on {
   }
   .profile .txt {
     padding: 0;
-    font-size: 20px;
+    font-size: 15px;
     color: #333;
   }
   .profile .txt span {
@@ -916,13 +923,13 @@ header nav.on {
   }
 
   #design1 .contWrap .pop button {
-    width: 100px;
-    padding: 10px 0 ;
+    width: 90px;
+    padding: 8px 0 ;
     background-color: #ccc;
     position: absolute;
     /* top:0%; */
-    left: 92%;
-    bottom: 6%;
+    left: 90%;
+    bottom: 5%;
     transform: translate(-50%);
     display: block;
   }
